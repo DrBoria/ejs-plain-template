@@ -1,6 +1,11 @@
 # Ejs Plain Template
 
-Basic EJS template for making statis pages.
+Are you tired of editing your landing page?
+Did you lost in dozens lines of html/css code?
+Meet basic EJS template.
+
+Component based approach with EJS, SCSS.
+And same html file as a result (even more than one html, if you'd like)
 
 ## Built With
 * HMR
