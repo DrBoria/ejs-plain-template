@@ -11,7 +11,7 @@ const dirNode = path.join(__dirname, "node_modules");
 const entryPoint = path.join(__dirname, "src/js/index.js");
 
 module.exports = {
-  entry: entryPoint,
+  entry: [entryPoint],
   resolve: {
     modules: [dirNode, dirSrc, dirBuild]
   },

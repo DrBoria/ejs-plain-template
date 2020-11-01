@@ -19,6 +19,7 @@ module.exports = merge(webpackConfig, {
   },
 
   devServer: {
+    inline: true,
     watchContentBase: true,
     host: "localhost",
     port: 8888,
