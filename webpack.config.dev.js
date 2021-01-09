@@ -9,6 +9,7 @@ module.exports = merge(webpackConfig, {
   output: {
     pathinfo: true,
     publicPath: "/",
+    path: "/",
     filename: "bundle.js"
   },
 
