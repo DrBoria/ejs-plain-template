@@ -2,8 +2,8 @@
 @import './variables.scss';
 
 body {
-    font-family: $fontFamily;
-    margin: 0;
+  font-family: $fontFamily;
+  margin: 0;
 }
 
 main {
@@ -14,5 +14,5 @@ main {
   align-items: center;
 }
 
-@import '../views/components/header/index.scss';
-@import '../views/components/footer/index.scss';
+@import '../components/footer/index.scss';
+@import '../components/header/index.scss';

@@ -1,6 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
-const merge = require("webpack-merge");
+const { merge } = require("webpack-merge");
 const webpackConfig = require("./webpack.config");
 const entryPoint = path.join(__dirname, "src/js/index.js");
 
@@ -13,7 +13,7 @@ module.exports = merge(webpackConfig, {
     pathinfo: true,
     publicPath: "/",
     path: "/",
-    filename: "bundle.js"
+    filename:  '[name].[contenthash].js'
   },
 
   watch: true,
@@ -23,8 +23,6 @@ module.exports = merge(webpackConfig, {
   },
 
   devServer: {
-    inline: true,
-    watchContentBase: true,
     host: "localhost",
     port: 8888,
     hot: true,

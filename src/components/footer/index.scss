@@ -1,9 +1,9 @@
-@import '../../../scss/variables.scss';
+@import 'styles/variables';
 
-header {
+footer {
   box-sizing: border-box;
   background-color: $colorSectionBG;
-  height: $headerHeight;
-  color: $colorSectionText;
+  height: $footerHeight;
+  color: var(--color-section-background);
   padding: $sectionOffsetVertical $sectionOffsetHorizontal;
 }
