@@ -1,0 +1,11 @@
+@import 'styles/variables';
+
+.heading-page {
+  box-sizing: border-box;
+  color: var(--color-section-background);
+  padding: $sectionOffsetVertical $sectionOffsetHorizontal;
+  height: 100%;
+  background-image: url('/public/images/example-fullscreen-image.png');
+  background-size: cover;
+  background-position: center center;
+}

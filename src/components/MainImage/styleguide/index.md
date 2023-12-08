@@ -1,7 +1,7 @@
 ```jsx
-import Footer from './index';
+import MainImage from './index';
 
 <div style={{ position: 'relative', height: '500px' }}>
-  <Footer />
+  <MainImage />
 </div>
 ```

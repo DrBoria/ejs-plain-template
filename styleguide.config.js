@@ -23,11 +23,10 @@ module.exports = {
     components: path.resolve(__dirname, 'src/components'),
     rootStore: path.resolve(__dirname, 'src/rootStore'),
     styles: path.resolve(__dirname, 'src/styles'),
-    assets: path.resolve(__dirname, 'src/assets'),
+    public: path.resolve(__dirname, 'public'),
     widgets: path.resolve(__dirname, 'src/widgets'),
     models: path.resolve(__dirname, 'src/models'),
     api: path.resolve(__dirname, 'src/api'),
-    utils: path.resolve(__dirname, 'src/utils'),
   },
   webpackConfig: {
     module: {
@@ -36,6 +35,22 @@ module.exports = {
           test: /\.(js|ts)x?$/,
           exclude: /node_modules/,
           loader: 'babel-loader',
+        },
+        {
+          test: /\.(jpe?g|png|gif|svg)$/,
+          type: 'asset/resource'
+        },
+        {
+          test: /\.(woff2?|ttf|otf|eot)$/,
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: './public/fonts/[name].[ext]'
+              }
+            }
+          ]
         },
         {
           test: /\.scss$/,
@@ -50,13 +65,9 @@ module.exports = {
             },
             {
               loader: "sass-loader",
-            }
+            },
           ],
           include: path.join(__dirname, "src/scss")
-        },
-        {
-          test: /\.(jpg|jpeg|png|gif|mp3)$/,
-          use: ['url-loader'],
         },
         {
           test: /\.svg$/i,

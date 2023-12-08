@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('./components/head.ejs', {
-    title: 'Webpack Starter App',
-    author: 'John Doe',
-    keywords: ['lorem', 'ipsum', 'dolor', 'sit', 'amet'],
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
-  }) -%>
+<%- include('./components/head.ejs', { title: 'Webpack Starter App' , author: 'John Doe' , keywords: ['lorem', 'ipsum'
+  , 'dolor' , 'sit' , 'amet' ], description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' }) -%>
+
   <body>
     <%- include('./components/header/index.ejs') -%>
-    <main>
-      <h1>Basic app</h1>
-      <img height="200" width="300" src="../../public/imgs/index.jpg" alt="">
-      <div>
-        a basic app with comic font in scss
-      </div>
-    </main>
-    <%- include('./components/footer/index.ejs') -%>
+      <main>
+        <h1>Basic app</h1>
+        <img height="200" width="300" src="/public/images/index.jpg" alt="">
+        <div>
+          a basic app with comic font in scss
+        </div>
+      </main>
+      <%- include('./components/footer/index.ejs') -%>
   </body>
+
 </html>
