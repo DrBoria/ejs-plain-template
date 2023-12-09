@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'styles/variables';
 @import 'styles/mixins';
 
@@ -9,15 +10,13 @@ body {
 
 html {
   @include basicFont;
+
   @function strip-unit($value) {
     @return $value / ($value * 0 + 1);
   }
 
   // font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
-  --font-size: calc(
-    #{$font-size-min} + #{strip-unit($font-size-max - $font-size-min)} *
-      ((100vw - #{$screen-mobile-width}) / #{strip-unit($screen-desktop-width - $screen-mobile-width)})
-  );
+  --font-size: calc(#{$font-size-min} + #{strip-unit($font-size-max - $font-size-min)} * ((100vw - #{$screen-mobile-width}) / #{strip-unit($screen-desktop-width - $screen-mobile-width)}));
 
   font-size: var(--font-size);
 
@@ -64,3 +63,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+@import '../components/footer/index.scss';
+@import '../components/header/index.scss';
+@import '../sections/MainImage/index.scss';

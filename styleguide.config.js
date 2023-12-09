@@ -67,7 +67,7 @@ module.exports = {
               loader: "sass-loader",
             },
           ],
-          include: path.join(__dirname, "src/scss")
+          include: path.join(__dirname, "src/styles")
         },
         {
           test: /\.svg$/i,
@@ -103,10 +103,14 @@ module.exports = {
       name: 'Components',
       components: 'src/components/**/styleguide/*.jsx',
     },
+    {
+      name: 'Sections',
+      components: 'src/sections/**/styleguide/*.jsx',
+    },
   ],
 
   // Styles provider
   styleguideComponents: {
-    Wrapper: path.join(__dirname, 'src/scss/index.js'),
+    Wrapper: path.join(__dirname, 'src/styles/ThemeProvider.js'),
   },
 };
