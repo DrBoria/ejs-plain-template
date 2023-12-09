@@ -8,6 +8,15 @@
     <% var url="/public/images/example-fullscreen-image.png" ; %>
       <% var className='big-background-image' ; %>
         <%- include('../components/picture/index.ejs', {url: url, className: className }) %>
+
+        <div class="social-links">
+          <% var socials=[{url: "/public/images/example-fullscreen-image.png" , title: 'Telegram', className: 'icon' },
+            {url: "/public/images/example-fullscreen-image.png" , title: 'Telegram', className: 'icon' }, ] ; %>
+            <% socials.forEach(function(social){ %>
+              <%- include('../components/social-link/index.ejs', {
+                url: social.url, title: social.title, className: social.className}); %>
+                <% }); %>
+        </div>
   </section>
   <section>
     <h2>Section 1 Title</h2>
