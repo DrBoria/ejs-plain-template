@@ -1,7 +1,6 @@
-var htmlText = require('../index.ejs');
-
-const Component = () => {
-    return <div dangerouslySetInnerHTML={{__html: htmlText.default}}></div>
+const Containers = () => {
+    return <div>
+    </div>
 }
 
-export default Component;
+export default Containers;

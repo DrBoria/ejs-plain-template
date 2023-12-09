@@ -1,0 +1,25 @@
+@import 'styles/variables';
+
+h1,
+.page-title {
+  font-size: $font-page-title;
+  line-height: $line-page-title;
+}
+
+h2,
+.section-title {
+  font-size: $font-section-title;
+  line-height: $line-section-title;
+}
+
+h3,
+.sub-section-title {
+  font-size: $font-sub-section-title;
+  line-height: $line-sub-section-title;
+}
+
+p,
+.plain-text {
+  font-size: $font-plain-text;
+  line-height: $line-plain-text;
+}

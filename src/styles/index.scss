@@ -65,6 +65,11 @@ a {
 }
 
 
+// Components
 @import '../components/footer/index.scss';
 @import '../components/header/index.scss';
+@import '../components/containers/index.scss';
+@import '../components/typography/index.scss';
+
+// Sections
 @import '../sections/MainImage/index.scss';
