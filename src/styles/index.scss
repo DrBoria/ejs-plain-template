@@ -64,12 +64,15 @@ a {
   box-sizing: border-box;
 }
 
-
 // Components
 @import '../components/footer/index.scss';
 @import '../components/header/index.scss';
 @import '../components/containers/index.scss';
 @import '../components/typography/index.scss';
+@import '../components/picture/index.scss';
 
 // Sections
 @import '../sections/MainImage/index.scss';
+
+// Pages
+@import '../pages/index.scss';

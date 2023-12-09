@@ -20,19 +20,11 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader",
-        include: path.join(__dirname, "scr/js")
+        include: path.join(__dirname, "src/js")
       },
       {
-        test: /\.(png|jpg|jpeg|svg)$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: './public/imgs/[name].[ext]'
-            }
-          }
-        ]
+        test: /\.(jpe?g|png|gif|svg)$/,
+        type: 'asset/resource'
       },
       {
         test: /\.(woff2?|ttf|otf|eot)$/,
@@ -61,7 +53,7 @@ module.exports = {
             loader: "sass-loader",
           }
         ],
-        include: path.join(__dirname, "src/scss")
+        include: path.join(__dirname, "src/styles")
       },
       {
         test: /\.ejs$/i,
@@ -78,14 +70,13 @@ module.exports = {
   },
   // For every new page add info here
   plugins: [
-
     customHtmlWebpackPlugin({
       filename: "index.html",
-      template: "./src/views/index.ejs",
+      template: "./src/pages/index.ejs",
     }),
     customHtmlWebpackPlugin({
       filename: "page2.html",
-      template: "./src/views/page2.ejs",
+      template: "./src/pages/page2.ejs",
     }),
 
     new MiniCssExtractPlugin({

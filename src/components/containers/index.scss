@@ -1,15 +1,22 @@
 @import 'styles/variables';
 
 .content-vertical {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 }
 
 .content-horizontal {
+  position: relative;
+
   display: flex;
 }
 
+section,
 .section {
+  position: relative;
+
   height: 50vh;
   width: 100%;
 }
