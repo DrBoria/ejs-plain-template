@@ -4,6 +4,10 @@ h1,
 .page-title {
   font-size: $font-page-title;
   line-height: $line-page-title;
+  -webkit-text-stroke: 1px var(--color-section);
+  /* Толщина и цвет обводки */
+  text-stroke: 1px var(--color-section);
+  /* Толщина и цвет обводки (стандартное свойство) */
 }
 
 h2,

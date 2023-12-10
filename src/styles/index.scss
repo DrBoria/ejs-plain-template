@@ -40,6 +40,9 @@ html {
   --height-screen-max: calc(#{$screen-desktop-height} - var(--height-header));
   --width-container-content-max: calc(#{$screen-desktop-width} - var(--offset-section));
 
+  // Basic Styles
+  background-color: var(--color-page);
+
   @include tablet {
     --height-header: #{$height-header-tablet};
     --offset-section: #{$offset-section-tablet};
