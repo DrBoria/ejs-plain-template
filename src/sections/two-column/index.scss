@@ -1,0 +1,14 @@
+@import 'styles/variables';
+
+.picture-container {
+
+  source,
+  img {
+    width: 100%;
+  }
+}
+
+.column {
+  overflow: hidden;
+  flex: 1;
+}

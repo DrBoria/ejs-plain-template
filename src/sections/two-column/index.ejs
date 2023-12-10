@@ -1,0 +1,9 @@
+<section class="content-horizontal <%= reversed %>">
+  <div class="column picture-container">
+    <%- include('../../components/picture/index.ejs', {url: url, className: className }) %>
+  </div>
+  <div class="column content-vertical centered">
+    <h1><%= title %></h1>
+    <p><%= content %></p>
+  </div>
+</section>

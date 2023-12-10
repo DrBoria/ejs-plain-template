@@ -1,0 +1,8 @@
+<div class="social-links">
+    <% var socials=[{url: "/public/images/background.jpg" , title: 'Telegram', className: 'icon' },
+      {url: "/public/images/background.jpg" , title: 'Telegram', className: 'icon' } ] ; %>
+      <% socials.forEach(function(social){ %>
+        <%- include('../../components/social-link/index.ejs', {
+          url: social.url, title: social.title, className: social.className}); %>
+        <% }); %>
+  </div>

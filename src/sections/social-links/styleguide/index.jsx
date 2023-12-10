@@ -1,8 +1,7 @@
 var htmlText = require('../index.ejs');
 
-const Component = () => {
-    console.log('htmlText', htmlText);
+const SocialLinks = () => {
     return <div dangerouslySetInnerHTML={{__html: htmlText.default}}></div>
 }
 
-export default Component;
+export default SocialLinks;

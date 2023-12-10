@@ -8,22 +8,26 @@ h1,
   /* Толщина и цвет обводки */
   text-stroke: 1px var(--color-section);
   /* Толщина и цвет обводки (стандартное свойство) */
+  color: var(--color-section-content);
 }
 
 h2,
 .section-title {
   font-size: $font-section-title;
   line-height: $line-section-title;
+  color: var(--color-section-content);
 }
 
 h3,
 .sub-section-title {
   font-size: $font-sub-section-title;
   line-height: $line-sub-section-title;
+  color: var(--color-section-content);
 }
 
 p,
 .plain-text {
   font-size: $font-plain-text;
   line-height: $line-plain-text;
+  color: var(--color-section-content);
 }
